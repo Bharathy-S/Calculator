@@ -1,0 +1,9 @@
+.calculator{
+    width: 300px; 
+margin:0 ;
+ height: 100vh;
+ text-align: center;
+}
+.display{
+    width: 100%;
+}

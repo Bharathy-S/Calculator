@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body>
+   <div class="d-flex justify-content-center align-items-center vh-100 bg-light">
+        <div class="calculator">
+                <div class="mt-5 ">
+                    <input type="text" placeholder="0" id="result" class="display" readonly>
+                    <div class="row p-2 justify-content-between">
+                        <div class="col">
+                             <button onclick="displayContent('(')" class="w-100  rounded">(</button>
+                             <button onclick="displayContent('7')"   class="w-100  mt-2 rounded">7</button>
+                             <button onclick="displayContent('4')"  class="w-100 mt-2 rounded">4</button>
+                             <button  onclick="displayContent('1')"  class="w-100 mt-2 rounded">1</button>
+                             <button  onclick="displayContent('0')"  class="w-100 mt-2 rounded">0</button>
+                             </div>
+    
+    
+                             <div class="col">
+                                <button onclick="displayContent(')')" class="w-100  rounded">)</button>
+                                <button onclick="displayContent('8')"   class="w-100  mt-2 rounded">8</button>
+                                <button onclick="displayContent('5')"  class="w-100 mt-2 rounded">5</button>
+                                <button  onclick="displayContent('2')"  class="w-100 mt-2 rounded">2</button>
+                                <button  onclick="displayContent('.')"  class="w-100 mt-2 rounded">.</button>
+                                </div>
+    
+                                <div class="col">
+                                    <button onclick="displayContent('%')" class="w-100  rounded">%</button>
+                                    <button onclick="displayContent('9')"   class="w-100  mt-2 rounded">9</button>
+                                    <button onclick="displayContent('6')"  class="w-100 mt-2 rounded">6</button>
+                                    <button  onclick="displayContent('3')"  class="w-100 mt-2 rounded">3</button>
+                                    <button style="background:rgb(13, 114, 214);" onclick="calcOutput()"  class="w-100 mt-2 rounded">=</button>
+                                    </div>
+    
+                                    <div class="col">
+                                        <button onclick="calClear()" class="w-100  rounded">AC</button>
+                                        <button onclick="displayContent('%')"   class="w-100  mt-2 rounded">%</button>
+                                        <button onclick="displayContent('*')"  class="w-100 mt-2 rounded">*</button>
+                                        <button  onclick="displayContent('-')"  class="w-100 mt-2 rounded">-</button>
+                                        <button  onclick="displayContent('+')"  class="w-100 mt-2 rounded">+</button>
+                                        <button  onclick="removeLastDigit()"  class="w-100 mt-2 rounded">&#9003</button>
+                                        </div>
+                      
+                </div>
+            </div>
+        </div>
+   </div>
+
+</body>
+<script src="./main.js"></script>
+
+</html>
